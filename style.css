@@ -191,4 +191,23 @@ body {
 .card p {
   color: #dddddd;
   font-size: 16px;
+
+}
+
+/* Smooth Scroll */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Navbar Lighting Effect */
+.navbar {
+  background: linear-gradient(90deg, #ff00cc, #3333ff, #00ffcc, #ff9900);
+  background-size: 400% 400%;
+  animation: glowing 8s infinite linear;
+}
+
+@keyframes glowing {
+  0% {background-position: 0% 50%;}
+  50% {background-position: 100% 50%;}
+  100% {background-position: 0% 50%;}
 }
