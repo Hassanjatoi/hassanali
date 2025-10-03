@@ -215,6 +215,10 @@ html {
   text-align: center;
   margin-top: 30px;
 }
+.share-buttons {
+  text-align: center;
+  margin-top: 30px;
+}
 
 .share-buttons a, 
 .share-buttons .copy-btn {
@@ -234,4 +238,27 @@ html {
 .share-buttons .copy-btn:hover {
   background: linear-gradient(45deg, #ff00cc, #3333ff, #00ffcc);
   transform: scale(1.2);
+}
+
+/* Fiverr Button */
+.fiverr-order {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.fiverr-order .btn-order {
+  display: inline-block;
+  padding: 12px 25px;
+  background: linear-gradient(90deg, #1dbf73, #17a55b);
+  color: white;
+  font-size: 18px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.fiverr-order .btn-order:hover {
+  background: linear-gradient(90deg, #17a55b, #1dbf73);
+  transform: scale(1.1);
 }
