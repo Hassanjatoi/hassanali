@@ -24,4 +24,9 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
       });
     }
   });
+
 });
+function copyLink() {
+  navigator.clipboard.writeText("https://yourwebsite.com");
+  alert("✅ Website link copied! Now you can share anywhere.");
+}
