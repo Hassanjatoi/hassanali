@@ -27,6 +27,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 
 });
 function copyLink() {
-  navigator.clipboard.writeText("https://yourwebsite.com");
+  navigator.clipboard.writeText("https://hassanjatoi.github.io/hassanali/");
   alert("✅ Website link copied! Now you can share anywhere.");
 }
+
