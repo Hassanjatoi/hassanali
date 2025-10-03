@@ -211,3 +211,27 @@ html {
   50% {background-position: 100% 50%;}
   100% {background-position: 0% 50%;}
 }
+.share-buttons {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.share-buttons a, 
+.share-buttons .copy-btn {
+  display: inline-block;
+  margin: 8px;
+  font-size: 22px;
+  color: white;
+  background: #444;
+  padding: 12px;
+  border-radius: 50%;
+  transition: 0.3s ease;
+  border: none;
+  cursor: pointer;
+}
+
+.share-buttons a:hover,
+.share-buttons .copy-btn:hover {
+  background: linear-gradient(45deg, #ff00cc, #3333ff, #00ffcc);
+  transform: scale(1.2);
+}
