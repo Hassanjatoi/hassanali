@@ -1,141 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Hassan Ali Portfolio</title>
-  <link rel="stylesheet" href="style.css" />
-  <script defer src="script.js"></script>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hassan Jatoi - Poet | Writer</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
 
-  <!-- Header/Navbar -->
-  <header class="navbar">
-    <div class="container">
-      <div class="logo">
-        <img src="https://i.ibb.co/rfX7CBwx/grok-image-uayyhf.jpg" alt="Hassan Ali Logo" />
-      </div>
-      <nav>
+    <nav class="navbar">
+        <div class="logo">
+            <img src="https://ibb.co/6RhCvvPm" alt="Hassan Jatoi Logo" class="logo-img">
+        </div>
         <ul class="nav-links">
-          <li><a href="#home">Home</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#services">Services</a></li>
-          <li><a href="#resume">Resume</a></li>
-          <li><a href="#contact">Contact</a></li>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#poetry">My Poetry</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li>
+                <img src="https://i.ibb.co/L50HkX4/placeholder-profile.jpg" alt="Profile Picture" class="profile-pic">
+            </li>
         </ul>
-      </nav>
-      <div class="cta">
-        <a href="https://wa.me/447845490480" class="btn">Let's Talk</a>
-      </div>
-      <div class="menu-toggle">
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
-    </div>
-  </header>
+        <div class="menu-toggle">
+            &#9776; </div>
+    </nav>
 
-  <!-- Hero Section -->
-  <section id="home" class="hero">
-    <div class="hero-content">
-      <div class="profile-image">
-        <img src="https://i.ibb.co/Tx8SwMh7/file-00000000400061fdb0c970b54d17f416-1.png" alt="Hassan Ali" />
-      </div>
-      <h1>Hello, I'm <span>Hassan Ali</span></h1>
-      <p>Web Designer, Graphic Designer, Ghostwriter, Freelancer, Author, Poet, Novelist, Story Writer</p>
-      <p>Hi I'm Hassan Jatoi from United Kingdom</p>
-      <a href="mailto:jatoihassan009@gmail.com" class="btn">Email Me</a>
-    </div>
-  </section>
+    <section id="home" class="hero-section">
+        <div class="hero-content">
+            <h1 class="main-title">Hassan Jatoi</h1>
+            <p class="subtitle">Poet | Writer | Author | Novelist | Storyteller</p>
+            <p class="intro-text">I’m Hassan Jatoi from Mehar, Sindh, Pakistan — a passionate poet and writer who transforms emotions into words and stories into reflections of life. My work blends love, humanity, and truth, capturing the essence of human experience through poetry, prose, and storytelling. Every word I write is a step toward connecting hearts and inspiring minds.</p>
+            <button onclick="document.querySelector('#poetry').scrollIntoView({ behavior: 'smooth' })">Read My Poetry</button>
+        </div>
+    </section>
+    
+    <section id="poetry" class="cards-section">
+        <h2>My Poetry</h2>
+        <div class="cards-container">
+            
+            <div class="service-card">
+                <i class="fas fa-feather-alt card-icon"></i>
+                <h3>Poetry</h3>
+                <p>My poetry is the voice of my heart — where words become feelings and silence turns into meaning. Each verse carries a fragment of love, pain, and truth — written not just to be read, but to be felt.</p>
+                <a href="https://allpoetry.com/Hassan_jatoi" target="_blank" class="card-link">Read My Poetry <i class="fas fa-arrow-right"></i></a>
+            </div>
 
-  <!-- Services Section -->
-  <section id="services" class="services">
-    <h2>My Services</h2>
-    <p>What I Do</p>
-    <div class="service-cards">
-      <div class="card">
-        <h3>Web Designer</h3>
-        <p>I create visually appealing and user-friendly websites, focusing on responsive layouts, modern design trends, and seamless user experiences to help brands stand out online.</p>
-      </div>
-      <div class="card">
-        <h3>Graphic Designer</h3>
-        <p>I design creative graphics, logos, social media visuals, and marketing materials that communicate ideas clearly and leave a lasting impression.</p>
-      </div>
-      <div class="card">
-        <h3>Ghostwriter</h3>
-        <p>I craft high-quality written content on behalf of clients, including articles, blogs, books, and other projects, ensuring their voice and vision are perfectly conveyed.</p>
-      </div>
-      <div class="card">
-        <h3>Freelancer</h3>
-        <p>I offer professional services across design, writing, and digital solutions, providing flexible and customized work tailored to client needs.</p>
-      </div>
-      <div class="card">
-        <h3>Author</h3>
-        <p>I write original books and literary works that inspire, educate, and entertain readers, combining creativity with meaningful storytelling.</p>
-      </div>
-      <div class="card">
-        <h3>Poet</h3>
-        <p>I express emotions, ideas, and experiences through poetry, weaving words to create impactful and memorable verses.</p>
-      </div>
-      <div class="card">
-        <h3>Novelist</h3>
-        <p>I develop compelling fictional stories and novels with rich characters, immersive plots, and imaginative worlds that captivate readers.</p>
-      </div>
-      <div class="card">
-        <h3>Story Writer</h3>
-        <p>I create short stories and narratives for various mediums, focusing on engaging plots, relatable characters, and memorable storytelling experiences.</p>
-      </div>
-    </div>
-  </section>
+            <div class="service-card">
+                <i class="fas fa-book-reader card-icon"></i>
+                <h3>Prose</h3>
+                <p>My prose flows from thought to truth — a mirror of emotions, experiences, and untold realities. Every line is a quiet conversation between the heart and the world, written to awaken reflection within the reader.</p>
+            </div>
 
+            <div class="service-card">
+                <i class="fas fa-quote-right card-icon"></i>
+                <h3>Quotes</h3>
+                <p>My quotes are whispers of the soul — brief words with deep meanings. Each line carries a spark of truth, born from pain, love, and life’s unspoken lessons.</p>
+            </div>
+            
+            <div class="service-card">
+                <i class="fas fa-scroll card-icon"></i>
+                <h3>Stories</h3>
+                <p>My stories are journeys of the heart — where emotions find faces and moments become memories. Each story carries a piece of life, love, and longing — written to touch souls and leave echoes behind.</p>
+            </div>
+            
+            <div class="service-card">
+                <i class="fas fa-pencil-alt card-icon"></i>
+                <h3>Novels</h3>
+                <p>My novels are worlds woven with emotions, where every character breathes, feels, and dreams. Each page unfolds the beauty and pain of life — a reflection of love, loss, and the endless search for meaning.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact-section">
+        <h2>Get in Touch</h2>
+        <div class="contact-info">
+            <p>Email me directly:</p>
+            <a href="mailto:jatoihassan009@gmail.com" class="email-link">jatoihassan009@gmail.com</a>
+            <button onclick="copyLink()">Copy Website Link</button>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
 </body>
 </html>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-<div class="share-buttons">
-  <h3>📢 Share my Website</h3>
-  
-  <!-- Facebook -->
-  <a href="https://www.facebook.com/sharer/sharer.php?u=https://hassanjatoi.github.io/hassanali/" target="_blank">
-    <i class="fab fa-facebook-f"></i>
-  </a>
-  
-  <!-- Twitter / X -->
-  <a href="https://twitter.com/intent/tweet?url=https://hassanjatoi.github.io/hassanali/&text=Check+this+amazing+portfolio!" target="_blank">
-    <i class="fab fa-twitter"></i>
-  </a>
-  
-  <!-- LinkedIn -->
-  <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://hassanjatoi.github.io/hassanali/" target="_blank">
-    <i class="fab fa-linkedin-in"></i>
-  </a>
-  
-  <!-- WhatsApp -->
-  <a href="https://api.whatsapp.com/send?text=Check+this+amazing+portfolio:+https://hassanjatoi.github.io/hassanali/" target="_blank">
-    <i class="fab fa-whatsapp"></i>
-  </a>
-  
-  <!-- Telegram -->
-  <a href="https://t.me/share/url?url=https://hassanjatoi.github.io/hassanali/&text=Check+this+amazing+portfolio" target="_blank">
-    <i class="fab fa-telegram"></i>
-  </a>
-  
-  <!-- TikTok Profile -->
-  <a href="https://www.tiktok.com/" target="_blank">
-    <i class="fab fa-tiktok"></i>
-  </a>
-  
-  <!-- Lemon8 Profile -->
-  <a href="https://www.lemon8-app.com/" target="_blank">
-    🍋
-  </a>
-  
-  <!-- Copy Link Button -->
-  <button onclick="copyLink()" class="copy-btn"><i class="fas fa-copy"></i></button>
-</div>
-
-<!-- Fiverr Order Now Button -->
-<div class="fiverr-order">
-  <a href="https://www.fiverr.com/s/2Kg2X7X" target="_blank" class="btn-order">🚀 Order Now on Fiverr</a>
-</div>
-     
