@@ -39,7 +39,7 @@ h1, h2, h3 {
 }
 
 .logo-img {
-    height: 30px; /* Logo ki height */
+    height: 60px; /* Logo ki height */
 }
 
 .nav-links {
@@ -226,3 +226,4 @@ button:hover {
         font-size: 2.5em;
     }
 }
+
