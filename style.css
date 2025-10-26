@@ -8,7 +8,7 @@
 
 /* Base Layout */
 html {
-    scroll-padding-top: 70px; /* Smooth scroll ke liye */
+    scroll-padding-top: 70px;
 }
 section {
     padding: 60px 5% 40px;
@@ -39,7 +39,7 @@ h1, h2, h3 {
 }
 
 .logo-img {
-    height: 60px; /* Logo ki height */
+    height: 30px;
 }
 
 .nav-links {
@@ -59,13 +59,13 @@ h1, h2, h3 {
     transition: color 0.3s;
 }
 
-/* Profile Picture Styling */
+/* Profile Picture Styling - INCREASED SIZE */
 .profile-pic {
-    width: 40px;           
-    height: 40px;          
-    border-radius: 50%;    
-    object-fit: cover;     
-    border: 2px solid white;
+    width: 60px;          /* Increased from 40px */
+    height: 60px;         /* Increased from 40px */
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid white; /* Slightly thicker border for better contrast */
 }
 
 /* Mobile Menu Toggle */
@@ -161,7 +161,7 @@ h1, h2, h3 {
     margin-bottom: 20px;
 }
 .email-link {
-    color: #ffcc00; /* Yellow color for email */
+    color: #ffcc00;
     font-size: 1.2em;
     margin-top: 10px;
     display: block;
@@ -200,7 +200,7 @@ button:hover {
         flex-direction: column;
         width: 100%;
         position: absolute;
-        top: 60px; /* Adjust based on navbar height */
+        top: 70px; /* Adjusted slightly due to larger profile pic */
         left: 0;
         background-color: #333;
         text-align: center;
@@ -214,8 +214,14 @@ button:hover {
     .nav-links li {
         margin: 10px 0;
     }
-    .nav-links a, .profile-pic {
+    .nav-links a {
         margin: 0;
+    }
+    /* Profile pic looks big on small screens, so we adjust it */
+    .profile-pic {
+        width: 50px;
+        height: 50px;
+        margin: 10px auto; 
     }
 
     .menu-toggle {
@@ -226,4 +232,3 @@ button:hover {
         font-size: 2.5em;
     }
 }
-
