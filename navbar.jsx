@@ -19,7 +19,7 @@
             <li><a href="#poetry">My Poetry</a></li>
             <li><a href="#contact">Contact</a></li>
             <li>
-                <img src="https://i.ibb.co/L50HkX4/placeholder-profile.jpg" alt="Profile Picture" class="profile-pic">
+                <img src="https://i.ibb.co/JR2045kd/IMG-20251026-WA0025-modified.png" alt="Profile Picture" class="profile-pic">
             </li>
         </ul>
         <div class="menu-toggle">
