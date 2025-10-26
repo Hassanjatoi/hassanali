@@ -1,86 +1,40 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hassan Jatoi - Poet | Writer</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-</head>
-<body>
+// Mobile Menu Toggle
+const menuToggle = document.querySelector('.menu-toggle');
+const navLinks = document.querySelector('.nav-links');
 
-    <nav class="navbar">
-        <div class="logo">
-            <img src="https://ibb.co/6RhCvvPm" alt="Hassan Jatoi Logo" class="logo-img">
-        </div>
-        <ul class="nav-links">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#poetry">My Poetry</a></li>
-            <li><a href="#contact">Contact</a></li>
-            <li>
-                <img src="https://i.ibb.co/L50HkX4/placeholder-profile.jpg" alt="Profile Picture" class="profile-pic">
-            </li>
-        </ul>
-        <div class="menu-toggle">
-            &#9776; </div>
-    </nav>
+menuToggle.addEventListener('click', () => {
+    // Mobile menu show/hide karna
+    navLinks.classList.toggle('active');
+});
 
-    <section id="home" class="hero-section">
-        <div class="hero-content">
-            <h1 class="main-title">Hassan Jatoi</h1>
-            <p class="subtitle">Poet | Writer | Author | Novelist | Storyteller</p>
-            <p class="intro-text">I’m Hassan Jatoi from Mehar, Sindh, Pakistan — a passionate poet and writer who transforms emotions into words and stories into reflections of life. My work blends love, humanity, and truth, capturing the essence of human experience through poetry, prose, and storytelling. Every word I write is a step toward connecting hearts and inspiring minds.</p>
-            <button onclick="document.querySelector('#poetry').scrollIntoView({ behavior: 'smooth' })">Read My Poetry</button>
-        </div>
-    </section>
-    
-    <section id="poetry" class="cards-section">
-        <h2>My Poetry</h2>
-        <div class="cards-container">
-            
-            <div class="service-card">
-                <i class="fas fa-feather-alt card-icon"></i>
-                <h3>Poetry</h3>
-                <p>My poetry is the voice of my heart — where words become feelings and silence turns into meaning. Each verse carries a fragment of love, pain, and truth — written not just to be read, but to be felt.</p>
-                <a href="https://allpoetry.com/Hassan_jatoi" target="_blank" class="card-link">Read My Poetry <i class="fas fa-arrow-right"></i></a>
-            </div>
+// Sticky Navbar on Scroll
+window.addEventListener('scroll', () => {
+    const navbar = document.querySelector('.navbar');
+    // 50 pixels se zyada scroll hone par 'scrolled' class lagana
+    navbar.classList.toggle('scrolled', window.scrollY > 50);
+});
 
-            <div class="service-card">
-                <i class="fas fa-book-reader card-icon"></i>
-                <h3>Prose</h3>
-                <p>My prose flows from thought to truth — a mirror of emotions, experiences, and untold realities. Every line is a quiet conversation between the heart and the world, written to awaken reflection within the reader.</p>
-            </div>
+// Smooth Scroll for Anchor Links
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        
+        // Link click hone par mobile menu ko band karna
+        navLinks.classList.remove('active'); 
 
-            <div class="service-card">
-                <i class="fas fa-quote-right card-icon"></i>
-                <h3>Quotes</h3>
-                <p>My quotes are whispers of the soul — brief words with deep meanings. Each line carries a spark of truth, born from pain, love, and life’s unspoken lessons.</p>
-            </div>
-            
-            <div class="service-card">
-                <i class="fas fa-scroll card-icon"></i>
-                <h3>Stories</h3>
-                <p>My stories are journeys of the heart — where emotions find faces and moments become memories. Each story carries a piece of life, love, and longing — written to touch souls and leave echoes behind.</p>
-            </div>
-            
-            <div class="service-card">
-                <i class="fas fa-pencil-alt card-icon"></i>
-                <h3>Novels</h3>
-                <p>My novels are worlds woven with emotions, where every character breathes, feels, and dreams. Each page unfolds the beauty and pain of life — a reflection of love, loss, and the endless search for meaning.</p>
-            </div>
-        </div>
-    </section>
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+            target.scrollIntoView({
+                behavior: 'smooth',
+                block: 'start'
+            });
+        }
+    });
 
-    <section id="contact" class="contact-section">
-        <h2>Get in Touch</h2>
-        <div class="contact-info">
-            <p>Email me directly:</p>
-            <a href="mailto:jatoihassan009@gmail.com" class="email-link">jatoihassan009@gmail.com</a>
-            <button onclick="copyLink()">Copy Website Link</button>
-        </div>
-    </section>
+});
 
-    <script src="script.js"></script>
-</body>
-</html>
+// Function to copy a link (Aapka diya hua link)
+function copyLink() {
+    navigator.clipboard.writeText("https://hassanjatoi.github.io/hassanali/");
+    alert("✅ Website link copied! Now you can share anywhere.");
+}
