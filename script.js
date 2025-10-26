@@ -30,3 +30,4 @@ function copyLink() {
   navigator.clipboard.writeText("https://hassanjatoi.github.io/hassanali/");
   alert("✅ Website link copied! Now you can share anywhere.");
 }
+
